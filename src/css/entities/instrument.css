@@ -1,0 +1,39 @@
+:root {
+    --blue: #0092CA;
+    --violet: #9F6EA3;
+    --lightblack: #222831;
+    --white: #FFFFFF;
+    --darkwhite: #CECACA;
+    --lightbshadow: rgba(0, 0, 0, 0.15);
+    --gray: #393E46;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+body {
+    background-color: beige;
+    opacity: 1;
+    background: linear-gradient(90deg, var(--blue) 0%, var(--gray) 100%);
+    font-family: 'Poppins', sans-serif;
+}
+
+.app {
+    max-width: 1200px;
+    width: 100%;
+    margin: 100px auto;
+    box-shadow: 0 0 5px gray;
+}
+
+.table {
+    padding: 30px 0;
+    border: 1px solid var(--gray);
+}

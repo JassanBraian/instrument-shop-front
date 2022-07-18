@@ -3,6 +3,8 @@ import { ButtonGroup, Button } from 'react-bootstrap';
 import InstrumContext from '../../../context/Instrument/InstrumContext';
 import InstrumModUpd from './InstrumModUpd';
 import Swal from 'sweetalert2';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPencilAlt, faTrashAlt } from '@fortawesome/fontawesome-free-solid';
 
 const InstrumFunc = ({ instrumId }) => {
 
@@ -19,7 +21,9 @@ const InstrumFunc = ({ instrumId }) => {
                         getInstrumentById(instrumId);
                         setShowModUpd(true);
                     }}
-                >Edit</Button>
+                >
+                    <FontAwesomeIcon icon={faPencilAlt} />
+                </Button>
 
                 <Button
                     variant='danger'
@@ -37,7 +41,9 @@ const InstrumFunc = ({ instrumId }) => {
                             }
                         });
                     }}
-                >Delete</Button>
+                >
+                    <FontAwesomeIcon icon={faTrashAlt} className="text-dark" />
+                </Button>
             </ButtonGroup>
 
             <InstrumModUpd

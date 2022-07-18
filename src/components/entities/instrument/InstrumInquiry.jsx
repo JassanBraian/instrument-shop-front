@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from 'react';
 import { Table } from 'react-bootstrap';
 import InstrumFunc from './InstrumFunc';
 import InstrumContext from '../../../context/Instrument/InstrumContext';
+import '../../../css/entities/instrument.css'
 
 const InstrumInquiry = () => {
     const { instruments, getInstruments } = useContext(InstrumContext);
@@ -10,15 +11,10 @@ const InstrumInquiry = () => {
         getInstruments();
     }, []);
 
-    // useEffect(() => {
-    //     getInstruments();
-    // }, [instruments]);
-
-
     return (
         <>
             <div className='app'>
-                <Table striped bordered hover className='table'>
+                <Table striped bordered hover className='table table-dark'>
                     <thead>
                         <tr>
                             <th>#</th>
