@@ -1,9 +1,10 @@
 import React from 'react';
+import InstumInquiry from '../components/entities/instrument/InstrumInquiry';
 
 const InstrumentPage = () => {
     return (
         <>
-            Instrument Page
+            <InstumInquiry/>
         </>
     );
 };
